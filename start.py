@@ -18,6 +18,4 @@ def create_app():
     def index():
         return "API Working"
 
-    create_database()
-
     return app

@@ -40,11 +40,11 @@ def create_database(db_path):
     cursor.execute('INSERT OR REPLACE INTO comments VALUES(7, "jimmypage123", "My guitar its more useful");')
     cursor.execute('INSERT OR REPLACE INTO comments VALUES(8, "jessica_k10", "Try again soon");')
 
-    cursor.execute('INSERT OR REPLACE INTO posts VALUES(1, "https://ibb.co/album/bbX6pK", "https://ibb.co/gTTKJG4", "john123", "Nice Place", 1, 10);')
-    cursor.execute('INSERT OR REPLACE INTO posts VALUES(2, "https://ibb.co/album/bbX6pK", "https://ibb.co/pZSvY88", "jessica_k10", "Amazing", 1, 15);')
-    cursor.execute('INSERT OR REPLACE INTO posts VALUES(3, "https://ibb.co/album/bbX6pK", "https://ibb.co/xLD2g5N", "barbara@happy", "Cool", 1, 3);')
-    cursor.execute('INSERT OR REPLACE INTO posts VALUES(4, "https://ibb.co/album/bbX6pK", "https://ibb.co/KrWtW01", "michaelmiller68", "Take that", 0, 0);')
-    cursor.execute('INSERT OR REPLACE INTO posts VALUES(5, "https://ibb.co/album/bbX6pK", "https://ibb.co/7C9V6hy", "hudson1970", "Other Place", 1, 58);')
+    cursor.execute('INSERT OR REPLACE INTO posts VALUES(1, "https://i.ibb.co/99RTKVS/Person-Curtis-4x5-e1564616444404.jpg", "https://i.ibb.co/kBd0WZc/paisagem-tropical-wallpaper-1.jpg", "john123", "Nice Place", 1, 10);')
+    cursor.execute('INSERT OR REPLACE INTO posts VALUES(2, "https://i.ibb.co/LYHZ5xQ/images.jpg", "https://i.ibb.co/4MHZhGG/Fotos-de-Paisagens-Ipes-Rosa-em-BH-Charles-Torres.jpg", "jessica_k10", "Amazing", 1, 15);')
+    cursor.execute('INSERT OR REPLACE INTO posts VALUES(3, "https://i.ibb.co/s5vsjTK/Missing-Persons-Dale-Bozzio-2020.jpg", "https://i.ibb.co/jMMXDdJ/277277-Papel-de-Parede-Bela-Paisagem-de-Campo-1680x1050.jpg", "barbara@happy", "Cool", 1, 3);')
+    cursor.execute('INSERT OR REPLACE INTO posts VALUES(4, "https://i.ibb.co/7nJGFCc/images-1.jpg", "https://i.ibb.co/F3KhY7F/Fotos-de-Paisagens-Luzes-de-Brasilia-Charles-Torres.jpg", "michaelmiller68", "Take that", 0, 0);')
+    cursor.execute('INSERT OR REPLACE INTO posts VALUES(5, "https://i.ibb.co/R36vMYg/images-2.jpg", "https://i.ibb.co/P6g2gmS/Fotos-de-Paisagens-Natureza-e-Cachoeiras-Charles-Torres.jpg", "hudson1970", "Other Place", 1, 58);')
 
     cursor.execute('''INSERT INTO post_comments_ref VALUES
                         (1,1), 
@@ -59,4 +59,4 @@ def create_database(db_path):
     connection.commit()
     connection.close()
 
-    print('Database successfully created and populated with data!')
+    print('Dados sincronizados !  ||  Database Synchronized !')
